@@ -1,7 +1,6 @@
-# Win10-MacOs-Ubuntu-laptop
-Compilation of resources to install Ubuntu on Win10 laptop and make it look similar to Mac OS 
 
-
+# This is a total writeup for a windows pc
+Download Ubuntu image >> run tweak commands changing the Ubuntu look to that of Mac Os
 _____________________________________________________________________
 
 # Download iso file
@@ -66,8 +65,10 @@ ________________________________________________________________________
 
 11.  Click 'Configure Secure Boot' and choose a password
 
-12.  On this page I elected to Partition my HHD to have Win10 on half and Ubuntu on the other
+12.  On this page I elected to Partition my HHD to have Win10 on half and Ubuntu on the 
+other
 
+13. Configure Firewall, then update
 
 ________________________________________________________________________
 
@@ -84,48 +85,37 @@ ________________________________________________________________________
 # Install gnome-tweaks, extensions ...
 
 
-Run to install both gnome-tweaks and gnome-shell-extensions
 
 ~$ sudo apt install gnome-tweaks gnome-shell-extensions
 
 
-
-Run command for drivers
-
-~$ sudo ubuntu-drivers autoinstall
-
 _______
 
-Now reboot
+Reboot
 
-From ubuntu home screen > dock app selection
+From ubuntu home screen > Settings app
 
-Open applications menu > type 'Extensions' in search bar
+Open 'Extensions' app
 
-Open "Extensions" application > enable 'User Themes' extension
+Enable 'User Themes' extension
 
 Disable 'Desktop Icons NG(DING)' extension
 
 ______
 
-Install Extension Manager
+# Install Extension Manager
 
 ~$ sudo apt install gnome-shell-extension-manager
 
-From ubuntu home screen > dock app selection
-
-Open applications menu > type 'Extensions' in search bar
-
-Open Extension manager from home menu
+From ubuntu home screen > Open Extensions Manager
 
 Browse for 'Blur-my-shell' extension and install
-Browse for 'Compiz alike magic lamp effect' extensionand install
 
-Run command to fix minimize when click app on dock
+Browse for 'Compiz alike magic lamp effect' extension and install
+
+Run command \/
 
 ~$ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-
-
 
 ________________________________________________________________________
 
@@ -136,7 +126,8 @@ WhiteSur wallpaper image
 https://wallpapercave.com/w/wp6843286
 Change this to your background image
 
-
+Open 'Settings' app from home screen > Appearance > Dock
+- Disable Panel mode 
 
 ~$ sudo apt install git
 
@@ -145,17 +136,20 @@ Change this to your background image
 ~$ ls
 
 ~$ cd WhiteSur-gtk-theme/
+
 cd into WhiteSur-gtk-theme directory that created with git clone
 
 ~/WhiteSur-gtk-theme$ ls -lah
 
 ~/WhiteSur-gtk-theme$ ./install.sh -t all -N glassy -s 220
+
 For info on this install command > reference README.md > https://github.com/vinceliuice/WhiteSur-gtk-theme
 
+-----------------
 
 ~/WhiteSur-gtk-theme$  ls -lah *sh
 
-~/WhiteSur-gtk-theme$  sudo ./tweaks.sh -g
+~/WhiteSur-gtk-theme$  sudo ./tweaks.sh -g -b '/path/to/wallpaper.jpg'
 
 
 ________________________________________________________________________
@@ -173,7 +167,6 @@ Go to /home folder
 create new folder named  " .icons "
 
 Make sure it starts with the period
-It will disappear after creation unless > right click inside .icon folder > click 'Show hidden'
 
 EXTRACT the Mkos-Big-Sur zip folder located in downloads folder to this  ' .icons '  folder
 
@@ -192,7 +185,7 @@ ________________________________________________________________________
   -Change to any of the Big Sur options from drop menu
 - Find Appearance > Legacy Applications >
   -Change to match the EXACT same option as chosen for 'Shell'
-- Find Window Titlebars > Placement >
+- Find 'Window Titlebars' > Placement >
   -Change to 'Left'
 
 
@@ -201,7 +194,7 @@ ________________________________________________________________________
 
 ________________________________________________________________________
 
-Set boot priority in Bios
+# Set boot priority in Bios
 
 
 1.  Boot into Win10 > User
