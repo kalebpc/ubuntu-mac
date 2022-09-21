@@ -93,7 +93,7 @@ _______
 
 Reboot
 
-From ubuntu home screen > Settings app
+From ubuntu home screen 
 
 Open 'Extensions' app
 
