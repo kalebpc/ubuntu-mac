@@ -212,7 +212,7 @@ ________________________________________________________________________
 Bios will differ from PC to PC
 
 6.  Go to 'Boot'
--   Change Boot priority of the un-name #2 option to #1 and save
+-   Change Boot priority to your install of Ubuntu
 
 7.  Go to 'Main' > ENABLE 'F12 Boot Menu'
 
