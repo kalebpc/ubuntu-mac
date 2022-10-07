@@ -1,6 +1,9 @@
 
 # This is a total writeup for a windows pc
 Download Ubuntu image >> run tweak commands changing the Ubuntu look to that of Mac Os
+
+
+# !!In process of finishing bash files and instructions for quick install!!
 _____________________________________________________________________
 
 # Download iso file
@@ -32,9 +35,6 @@ Once installed and running
 
 4.  At bottom
 -   Click 'Start' and wait till the status bar is fully green indicating it finished
-
-
-
 
 
 ________________________________________________________________________
@@ -85,21 +85,13 @@ ________________________________________________________________________
 # Install gnome-tweaks, extensions ...
 
 
-
 ~$ sudo apt install gnome-tweaks gnome-shell-extensions
 
+~$ gnome-extensions disable ding@rastersoft.com
 
+~$ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 _______
 
-Reboot
-
-From ubuntu home screen 
-
-Open 'Extensions' app
-
-Enable 'User Themes' extension
-
-Disable 'Desktop Icons NG(DING)' extension
 
 ______
 
@@ -109,13 +101,12 @@ ______
 
 From ubuntu home screen > Open Extensions Manager
 
+Browse for 'User Themes' extension and install
+
 Browse for 'Blur-my-shell' extension and install
 
 Browse for 'Compiz alike magic lamp effect' extension and install
 
-Run command \/
-
-~$ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
 ________________________________________________________________________
 
@@ -133,42 +124,24 @@ Open 'Settings' app from home screen > Appearance > Dock
 
 ~$ git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
 
-~$ ls
-
-~$ cd WhiteSur-gtk-theme/
-
-cd into WhiteSur-gtk-theme directory that created with git clone
-
-~/WhiteSur-gtk-theme$ ls -lah
-
-~/WhiteSur-gtk-theme$ ./install.sh -t all -N glassy -s 220
+~$ sudo ./WhiteSur-gtk-theme/install.sh -t all -N glassy -s 220
 
 For info on this install command > reference README.md > https://github.com/vinceliuice/WhiteSur-gtk-theme
 
 -----------------
-
-~/WhiteSur-gtk-theme$  ls -lah *sh
-
-~/WhiteSur-gtk-theme$  sudo ./tweaks.sh -g -b '/path/to/wallpaper.jpg'
 
 
 ________________________________________________________________________
 
 # WhiteSur icon theme
 
+https://github.com/zayronxio/Mkos-Big-Sur for ICON theme package
 
-Open tab https://github.com/zayronxio/Mkos-Big-Sur for ICON theme package
-Right click to download zip from > 'Code' link
+~$ git clone https://github.com/zayronxio/Mkos-Big-Sur.git
 
-Open file directory from dock
+~$ mkdir .icons
 
-Go to /home folder
-
-create new folder named  " .icons "
-
-Make sure it starts with the period
-
-EXTRACT the Mkos-Big-Sur zip folder located in downloads folder to this  ' .icons '  folder
+~$ cp -r Mkos-Big-Sur .icons
 
 
 ________________________________________________________________________
@@ -212,7 +185,7 @@ ________________________________________________________________________
 Bios will differ from PC to PC
 
 6.  Go to 'Boot'
--   Change Boot priority to your install of Ubuntu
+-   Change Boot priority of the un-name #2 option to #1 and save
 
 7.  Go to 'Main' > ENABLE 'F12 Boot Menu'
 
