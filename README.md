@@ -3,7 +3,7 @@
 Download Ubuntu image >> run tweak commands changing the Ubuntu look to that of Mac Os
 
 
-# !!In process of finishing bash files and instructions for quick install!!
+# ****In process of finishing bash files and instructions for install****
 _____________________________________________________________________
 
 # Download iso file
