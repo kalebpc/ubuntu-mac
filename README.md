@@ -7,7 +7,7 @@
 
 Refer to bash-install-README.md for bash install instructions
 
-
+![Screenshot from 2022-10-08 08-17-21 - Copy](https://user-images.githubusercontent.com/113309697/194709322-88dec612-eb1b-42e2-a49d-d9e59a60c722.png)
 ________________________________________________________________________
 
 # Install gnome-tweaks, extensions ...
@@ -86,6 +86,10 @@ ________________________________________________________________________
 
 
 ________________________________________________________________________
+# Before
+![Screenshot from 2022-10-08 07-51-43 - Copy](https://user-images.githubusercontent.com/113309697/194709319-0aef82d8-84b5-4bfb-8d6e-5e68b80f3576.png)
+# After
+![Screenshot from 2022-10-08 08-17-21 - Copy](https://user-images.githubusercontent.com/113309697/194709322-88dec612-eb1b-42e2-a49d-d9e59a60c722.png)
 ________________________________________________________________________
 
 
@@ -175,3 +179,6 @@ ________________________________________________________________________
 7.  Go to 'Main' > ENABLE 'F12 Boot Menu'
 
 8.  Save and Exit
+
+
+
