@@ -1,20 +1,30 @@
 #!/bin/bash
+apt-get update
+yes | apt upgrade && apt-get install git
 
-#ufw install and configuration
-apt-get install ufw -y
-#ufw reset
-yes | ufw reset
+#**\/optional
 
-ufw enable
+#\/uncomment this line to install a basic firewall setup
+#sh Win10-MacOs-Ubuntu-laptop/ufw.sh 
 
-ufw default deny incoming
-ufw default deny outgoing
-ufw default deny forward
+#****/\optional******
 
-main_interface=$(ip route get 8.8.8.8 | awk -- '{printf $5}')
-ufw allow out on $main_interface to 1.1.1.1 proto udp port 53 comment 'allow DNS'
-ufw allow out on $main_interface to any proto tcp port 80 comment 'allow HTTP'
-ufw allow out on $main_interface to any proto tcp port 443 comment 'allow HTTPS'
+#Install gnome-tweaks, extensions
+yes | apt-get install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manager
+####////Have to manually open Extension Manager > search for the extensions and install////
 
-ufw status numbered
-echo "Done"
+#WhiteSur theme install
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+./WhiteSur-gtk-theme/install.sh -c Dark -t all -N glassy -s 220
+
+####////still need to add background photo change
+
+#WhiteSur icon theme
+git clone https://github.com/zayronxio/Mkos-Big-Sur.git
+mkdir .icons
+cp -r Mkos-Big-Sur .icons
+#Configure gnome tweaks
+chmod +x Win10-MacOs-Ubuntu-laptop/gsettings.sh
+sleep 1
+./WhiteSur-gtk-theme/tweaks.sh -f monterey -s
+echo 'Run    ./Win10-MacOs-Ubuntu-laptop/gsettings.sh   to configure gnome settings'
