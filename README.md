@@ -1,7 +1,5 @@
 
-# Install Ubuntu looking like MacOs on Windows PC
-
-Purpose of this repository:
+# Purpose of this repository:
 
 - Download Ubuntu image
 
