@@ -92,7 +92,7 @@ ________________________________________________________________________
 
 
 
-# Following instructions for USB formatting and Ubuntu install:
+# USB formatting and Ubuntu install:
 
 
 _____________________________________________________________________
