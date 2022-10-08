@@ -1,8 +1,14 @@
 #!/bin/bash
 apt-get update
 yes | apt upgrade && apt-get install git
-#Install and setup universal firewall
-sh Win10-MacOs-Ubuntu-laptop/ufw.sh
+
+#**\/optional
+
+#\/uncomment this line to install a basic firewall setup
+#sh Win10-MacOs-Ubuntu-laptop/ufw.sh 
+
+#****/\optional******
+
 #Install gnome-tweaks, extensions
 yes | apt-get install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manager
 ####////Have to manually open Extension Manager > search for the extensions and install////
