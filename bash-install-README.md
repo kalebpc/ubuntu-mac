@@ -1,6 +1,6 @@
 # Bash Install
 
-# *Close all apps before running commands*
+*Close all apps before running commands*
 
 ~$ sudo apt-get install git
 
@@ -10,7 +10,7 @@
 
 ~$ ./Win10-MacOs-Ubuntu-laptop/gsettings.sh
 
-# Open Extension Manager
+Open Extension Manager
 
 Search and install extensions:
 
@@ -20,4 +20,4 @@ Search and install extensions:
 
 - Compiz alike magic lamp effect
 
-# Change background image to whatever you want
+Change background image to whatever you want
