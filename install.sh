@@ -22,4 +22,4 @@ cp -r Mkos-Big-Sur .icons
 chmod +x Win10-MacOs-Ubuntu-laptop/gsettings.sh
 sleep 1
 ./WhiteSur-gtk-theme/tweaks.sh -f monterey -s
-echo 'Run    ./Win10-MacOs-Ubuntu-laptop/gsettings.sh   to configure gnome, extensions!!!'
+echo 'Run    ./Win10-MacOs-Ubuntu-laptop/gsettings.sh   to configure gnome settings!!!'
