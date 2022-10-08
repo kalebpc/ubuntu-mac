@@ -5,7 +5,7 @@
 
 - Alter Ubuntu desktop to look similar to Mac Os
 
-*Refer to bash-install-README.md for bash install instructions*
+Refer to bash-install-README.md for bash install instructions
 
 
 ________________________________________________________________________
