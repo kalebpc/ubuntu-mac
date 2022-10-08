@@ -35,7 +35,7 @@ ________________________________________________________________________
 
 # WhiteSur theme install
 
-Change this to your background image:
+Change this to your background image or whatever you want:
   - WhiteSur wallpaper image: https://wallpapercave.com/w/wp6843286
 
 Open Settings:
