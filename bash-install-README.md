@@ -1,6 +1,6 @@
 # Bash Install
 
-# !!! CLOSE ALL APPS EXCEPT TERMINAL BEFORE RUNNING COMMANDS !!!
+# *Close all apps before running commands*
 
 ~$ sudo apt-get install git
 
