@@ -5,7 +5,7 @@
 
 - Alter Ubuntu desktop to look similar to Mac Os
 
-Refer to bash-install-README.md for bash install instructions
+Refer to <a href="https://github.com/kalebpc/Win10-MacOs-Ubuntu-laptop/blob/main/bash-install-README.md">bash-install-README.md</a> for bash install instructions
 
 ![Screenshot from 2022-10-08 08-17-21 - Copy](https://user-images.githubusercontent.com/113309697/194709322-88dec612-eb1b-42e2-a49d-d9e59a60c722.png)
 ________________________________________________________________________
